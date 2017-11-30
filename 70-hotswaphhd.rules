@@ -1,0 +1,1 @@
+SUBSYSTEMS=="scsi",ATTRS{model}=="WDC WD1600AAJS-6", ATTRS{state}=="running", ENV{ID_SERIAL_SHORT}=="WD-WCAV36680606", ENV{DEVTYPE}=="disk", RUN+="/usr/bin/udevtesti %E{ID_SERIAL}"
