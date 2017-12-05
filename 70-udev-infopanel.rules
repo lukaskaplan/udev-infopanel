@@ -1,0 +1,6 @@
+ACTION=="add", ENV{DEVTYPE}=="disk", RUN+="/usr/bin/udev-infopanel.sh %E{ID_SERIAL_SHORT} %E{ID_PATH} add"
+ACTION=="remove", ENV{DEVTYPE}=="disk", RUN+="/usr/bin/udev-infopanel.sh %E{ID_SERIAL_SHORT} %E{ID_PATH} remove"
+
+#SUBSYSTEMS=="scsi",ATTRS{state}=="running", ENV{DEVTYPE}=="disk", RUN+="/usr/bin/udevtest %E{ID_SERIAL_SHORT} %E{ID_PATH}"
+#ATTRS{model}=="WDC WD1600AAJS-6", 
+#ENV{ID_SERIAL_SHORT}=="WD-WCAV36680606", 
