@@ -26,7 +26,18 @@ Typ zobrazovaných informací:
 * web server dostává informace o událostech připojení/odpojení disku z udev rules
 
 ## Instalace
+Potřebné balíky:
+* apache2
+* php5
+* php-cli
 
+```Bash
+cd /var/www/
+git clone https://github.com/lukaskaplan/udev-infopanel
+cd ./udev-infopannel
+chmod a+x ./install.sh
+./install.sh
+```
 
 ## Poznamky k udev
 https://wiki.debian.org/udev
