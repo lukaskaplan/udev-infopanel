@@ -31,15 +31,15 @@ Typ zobrazovaných informací:
 ## Poznamky k udev
 https://wiki.debian.org/udev
 
-** Cesty k udev rules **
+**Cesty k udev rules**
 * /etc/udev/rules.d/
 * /lib/udev/rules.d/
 * /run/udev/rules.d/
 
-** Příklad udev rules souboru: **
+**Příklad udev rules souboru:**
 SUBSYSTEMS=="scsi",ATTRS{model}=="WDC WD1600AAJS-6",ATTRS{state}=="running", ENV{"ID_SERIAL_SHORT"}="WD-WCAV36680606"
 
-** Užitečné příkazy **
+**Užitečné příkazy**
 * udevadm control --reload-rules
 * udevadm info --name=sdc -q all
 * udevadm info --name=sdc --attribute-walk
