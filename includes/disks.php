@@ -1,8 +1,8 @@
 <?php
 $d0_sn = "";
 $d1_sn = "";
-@include('drives/drive0.php');
-@include('drives/drive1.php');
+@include('../drives/drive0.php');
+@include('../drives/drive1.php');
 
 if($d0_sn != "") $d0_running = " running";
 else $d0_running = "";
