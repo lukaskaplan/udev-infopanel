@@ -37,7 +37,9 @@ https://wiki.debian.org/udev
 * /run/udev/rules.d/
 
 **Příklad udev rules souboru:**
+```
 SUBSYSTEMS=="scsi",ATTRS{model}=="WDC WD1600AAJS-6",ATTRS{state}=="running", ENV{"ID_SERIAL_SHORT"}="WD-WCAV36680606"
+```
 
 **Užitečné příkazy**
 * udevadm control --reload-rules
