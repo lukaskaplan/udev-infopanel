@@ -28,6 +28,7 @@ Typ zobrazovaných informací:
 ## Instalace
 Potřebné balíky:
 * apache2
+* libapache2-mod-php
 * php5
 * php-cli
 
