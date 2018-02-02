@@ -59,6 +59,7 @@ SUBSYSTEMS=="scsi",ATTRS{model}=="WDC WD1600AAJS-6",ATTRS{state}=="running", ENV
 * udevadm info --name=sdc --attribute-walk
 * udevadm monitor --property
 
+
 * hdparm -C /dev/sdk
 * hdparm -y /dev/sdk (zastavení disku)
 * echo offline > /sys/block/sdk/device/state (odpojení disku)
